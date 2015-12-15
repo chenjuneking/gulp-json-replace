@@ -3,8 +3,7 @@
 
 ## Usage
 
-Assume you wanna replace the title and the description/keywords of the html file:
-
+Assume you wanna replace the title and the description/keywords of the html file:<br />
 index.html, signin/signin.html, signup/signup.html
 ```
 <html>
@@ -108,12 +107,12 @@ gulp.task('json-replace', function() {
 Type: `Object`
 
 ##### options.file
-Type: `String`
+Type: `String`<br />
 The json file.
 
 ##### options.identify
-Type: `String`
-Default: `%%`
+Type: `String`<br />
+Default: `%%`<br />
 The string to identify the search field.
 
 
