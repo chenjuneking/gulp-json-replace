@@ -4,9 +4,8 @@
 ## Usage
 
 Assume you wanna replace the title and the description/keywords of the html file:
-
-```index.html, signin/signin.html, signup/signup.html
-<!DOCTYPE html>
+index.html, signin/signin.html, signup/signup.html
+```
 <html>
 <head>
     <title>%%title</title>
