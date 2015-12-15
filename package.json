@@ -1,0 +1,35 @@
+{
+  "name": "gulp-json-replace",
+  "version": "0.0.1",
+  "description": "Replace String From A JSON File.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/chenjuneking/gulp-json-replace.git"
+  },
+  "keywords": [
+    "gulpplugin",
+    "replace",
+    "json replace"
+  ],
+  "author": {
+    "name": "jacketchen",
+    "email": "342115615@qq.com",
+    "url": "https://github.com/chenjuneking"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chenjuneking/gulp-json-replace/issues"
+  },
+  "engines": {
+    "node": ">=0.10"
+  },
+  "homepage": "https://github.com/chenjuneking/gulp-json-replace",
+  "devDependencies": {
+    "through2": "0.6.3",
+    "replacestream": "2.0.0"
+  }
+}
