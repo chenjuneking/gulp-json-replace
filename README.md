@@ -4,7 +4,7 @@
 ## Usage
 
 Assume you wanna replace the title and the description/keywords of the html file:<br />
-index.html, signin/signin.html, signup/signup.html
+**index.html, signin/signin.html, signup/signup.html**
 ```
 <html>
 <head>
@@ -16,8 +16,9 @@ index.html, signin/signin.html, signup/signup.html
 <body></body>
 </html>
 ```
-And you had the config file that contains all of the page meta infomations:
-```config.json
+And you had the config file that contains all of the page meta infomations:<br />
+**config.json**
+```
 {
     "index.html": {
         "title": "GULP JSON REPLACE",
@@ -38,8 +39,9 @@ And you had the config file that contains all of the page meta infomations:
 
 ```
 
-Rusult:
-```index.html
+Rusult:<br />
+**index.html**
+```
 <!DOCTYPE html>
 <html>
 <head>
@@ -51,7 +53,8 @@ Rusult:
 <body></body>
 </html>
 ```
-```signin/signin.html
+**signin/signin.html**
+```
 <!DOCTYPE html>
 <html>
 <head>
@@ -63,8 +66,8 @@ Rusult:
 <body></body>
 </html>
 ```
-
-```signup/signup.html
+**signup/signup.html**
+```
 <!DOCTYPE html>
 <html>
 <head>
