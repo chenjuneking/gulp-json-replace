@@ -11,7 +11,7 @@ index.html, signin/signin.html, signup/signup.html
     <title>%%title</title>
     <meta charset="utf-8" />
     <meta name="description" content="%%description">
-    <meta name="keywords" content="%%description">
+    <meta name="keywords" content="%%keywords">
 </head>
 <body></body>
 </html>
