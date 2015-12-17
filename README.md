@@ -18,7 +18,7 @@ Assume you wanna replace the title and the description/keywords of the html file
 ```
 And you had the config file that contains all of the pages meta infomation:<br />
 **config.json**
-```javascript
+```json
 {
     "index.html": {
         "title": "GULP JSON REPLACE",
