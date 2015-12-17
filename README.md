@@ -5,7 +5,7 @@
 
 Assume you wanna replace the title and the description/keywords of the html file:<br />
 **index.html, signin/signin.html, signup/signup.html**
-```
+```html
 <html>
 <head>
     <title>%%title</title>
@@ -16,9 +16,9 @@ Assume you wanna replace the title and the description/keywords of the html file
 <body></body>
 </html>
 ```
-And you had the config file that contains all of the page meta infomations:<br />
+And you had the config file that contains all of the pages meta infomation:<br />
 **config.json**
-```
+```javascript
 {
     "index.html": {
         "title": "GULP JSON REPLACE",
@@ -41,7 +41,7 @@ And you had the config file that contains all of the page meta infomations:<br /
 
 Rusult:<br />
 **index.html**
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -54,7 +54,7 @@ Rusult:<br />
 </html>
 ```
 **signin/signin.html**
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -67,11 +67,11 @@ Rusult:<br />
 </html>
 ```
 **signup/signup.html**
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>
-    <title>GULP JSON REPLACE</title>
+    <title>Sign Up</title>
     <meta charset="utf-8" />
     <meta name="description" content="description for the page sign up">
     <meta name="keywords" content="keywords for the page sign up">
