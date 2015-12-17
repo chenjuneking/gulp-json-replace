@@ -35,7 +35,7 @@
     "replacestream": "2.0.0"
   },
   "devDependencies": {
-    "through2": "0.6.3",
-    "replacestream": "2.0.0"
+    "replacestream": "2.0.0",
+    "through2": "0.6.3"
   }
 }

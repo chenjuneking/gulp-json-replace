@@ -1,0 +1,17 @@
+{
+    "index.html": {
+        "title": "GULP JSON REPLACE",
+        "description": "description for the main page",
+        "keywords": "keywords for the main page"
+    },
+    "signin/signin.html": {
+        "title": "Sign In",
+        "description": "description for the page sign in",
+        "keywords": "keywords for the page sign in"
+    },
+    "signup/signup.html": {
+        "title": "Sign Up",
+        "description": "description for the page sign up",
+        "keywords": "keywords for the page sign up"
+    }
+}
