@@ -40,24 +40,3 @@ function jReplacer(options) {
 }
 
 module.exports = jReplacer;
-/*
-function prefixStream(prefixText) {
-    var stream = through();
-    stream.write(prefixText);
-    return stream;
-}
-
-function gulpPrefixer(prefixText) {
-    //if(!prefixText) throw new PluginError(PLUGIN_NAME, 'Missing prefix text!');
-    prefixText = new Buffer(prefixText);
-
-    return through.obj(function(file, enc, cb) {
-        if(file.isNull()) return cb(null, file);
-        if(file.isBuffer()) file.contents = Buffer.concat([prefixText, file.contents]);
-        if(file.isStream()) file.contents = file.contents.pipe(prefixStream(prefixText));
-        cb(null, file);
-    })
-}
-
-module.exports = gulpPrefixer;
-*/
