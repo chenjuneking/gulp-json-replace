@@ -1,6 +1,6 @@
 {
   "name": "gulp-json-replace",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Replace String From A JSON File.",
   "main": "index.js",
   "scripts": {
