@@ -94,7 +94,7 @@ var jr = require('gulp-json-replace');
 gulp.task('json-replace', function() {
     return gulp.src('www/**/*.html')
         .pipe(jr({
-            file: './config.json',
+            src: './config.json',
             identify: '%%'
         }))
         .pipe(gulp.dest('www/'))
@@ -109,14 +109,19 @@ gulp.task('json-replace', function() {
 #### options
 Type: `Object`
 
-##### options.file
-Type: `String`<br />
-The json file.
+##### options.src
+Type: `String` or `Object`<br />
+Accept the path of json file, or an JavaScript Object Literals.
 
 ##### options.identify
 Type: `String`<br />
 Default: `%%`<br />
 The string to identify the search field.
+
+##### options.mode
+Type: `String`<br />
+Default: `strict`<br />
+Specify the match mode, the value would be `strict` or `loose`, if set to `loose`, it will ignore the file extension. For example: "index.html" will match files of "index.hbs", "index.html", "index.xxx"...
 
 
 [MDN documentation for RegExp]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp

@@ -13,9 +13,14 @@ function normalizeKey(json) {
 }
 
 function jReplacer(options) {
-    // get obj from the json
-    var json = JSON.parse(fs.readFileSync(options.file, 'utf8'));
+    var json;
+    if (typeof options.src == 'string') {
+        json = JSON.parse(fs.readFileSync(options.src, 'utf8'));
+    } else if (typeof options.src == 'object') {
+        json = options.src;
+    }
     json = normalizeKey(json);
+    var isLoose = options.mode === 'loose', matcher;
     // identify is a prefix string
     var identify = options.identify || '%%';
     var stream = through.obj(function(file, enc, cb) {
@@ -25,7 +30,9 @@ function jReplacer(options) {
             return cb(null, file);
         }
         for(var key in json) {
-            if(path.indexOf(key) != -1) {
+            matcher = key;
+            if (isLoose) matcher = matcher.substr(0, matcher.lastIndexOf('.'));
+            if(path.indexOf(matcher) != -1) {
                 for(var i in json[key]) {
                     search = identify + i;
                     replacement = json[key][i];
