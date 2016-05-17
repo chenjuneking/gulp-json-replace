@@ -3,16 +3,27 @@
 var through = require('through2');
 var fs = require('fs');
 var rs = require('replacestream');
+var _p = require('path');
+
+function normalizeKey(json) {
+    var o = {};
+    for(var key in json) o[_p.normalize(key)] = json[key];
+    json = null;
+    return o;
+}
 
 function jReplacer(options) {
     // get obj from the json
     var json = JSON.parse(fs.readFileSync(options.file, 'utf8'));
+    json = normalizeKey(json);
     // identify is a prefix string
     var identify = options.identify || '%%';
     var stream = through.obj(function(file, enc, cb) {
         // get the file path
         var path = file.path, search, replacement;
-        if(file.isNull()) return cb(null, file);
+        if(file.isNull()) {
+            return cb(null, file);
+        }
         for(var key in json) {
             if(path.indexOf(key) != -1) {
                 for(var i in json[key]) {
